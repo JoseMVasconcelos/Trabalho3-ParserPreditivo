@@ -1,0 +1,33 @@
+def checaDiferente(int a, int b) {
+    int diferente;
+    if (a <> b) {
+        diferente := true;
+    } else {
+        diferente := false;
+    } endif
+    return diferente;
+}
+
+def verificaMaior(int a, int b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    } endif
+}
+
+def main() {
+    int valor1, valor2, diferente, maior;
+    valor1 := 10;
+    valor2 := 20;
+
+    valor3 := 30;
+    valor4 := 40;
+
+    diferente := checaDiferente(valor3, valor4);
+    maior := verificaMaior(valor1, valor2);
+    
+    print diferente;
+    print maior;
+    return;
+}

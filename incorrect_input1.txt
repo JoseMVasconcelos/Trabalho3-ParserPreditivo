@@ -1,0 +1,45 @@
+def calculator(int a, int b, int op) {
+    if (op == 1) {
+        int results;
+        results := a + b;
+        return results;
+    } 
+    if (op == 2) {
+        int results;
+        results := a - b;
+        return results;
+    } 
+    if (op == 3) {
+        int results;
+        results := a * b;
+        return results;
+    } 
+    if (op == 4) {
+        int results;
+        results := a / b;
+        return results;
+    } 
+
+}
+def main() {
+    int x, y, operation, result;
+    
+    x := 15;
+    y := 5;
+    operation := 1;
+    
+    result := calculator(x, y, operation);
+    print result;
+    
+    operation := 2;
+    result := calculator(x, y, operation);
+    print result;
+    
+    operation := 3;
+    result := calculator(x, y, operation);
+    print result;
+    
+    operation := 4;
+    result := calculator(x, y, operation);
+    print result;
+}
